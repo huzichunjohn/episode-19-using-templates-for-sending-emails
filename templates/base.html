@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="{{ STATIC_URL }}css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}
+            <ul>
+                <li><a href='{% url "emailone" %}'>Email One</a></li>
+                <li><a href='{% url "emailtwo" %}'>Email Two</a></li>
+            </ul>
+            {% endblock %}
+        </div>
+    </body>
+</html>
